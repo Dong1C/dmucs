@@ -52,7 +52,7 @@ if(!skt) {
 #ifdef AS400
 ret= vsprintf(buf,fmt,__va_list args);
 #else
-ret= vsprintf(buf,fmt,(char *) args);
+ret= vsprintf(buf,fmt,args);
 #endif
 Swrite(skt,buf,strlen(buf)+1);	/* send the null byte, too */
 

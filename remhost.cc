@@ -62,7 +62,7 @@ main(int argc, char *argv[])
     std::ostringstream serverName;
     serverName << "@" << SERVER_MACH_NAME;
     int serverPortNum = SERVER_PORT_NUM;
-    char *distingProp = '\0';
+    char *distingProp = "\0";
 
     int nextarg = 1;
     for (; nextarg < argc; nextarg++) {
