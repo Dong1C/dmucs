@@ -1,0 +1,12 @@
+# dmucs
+## Introduction
+This project began several years ago as a network load-balancing middleware for distcc, designed to enable the traditional GNU Make to efficiently utilize CPU resources across a custom cluster of compiler servers. 
+After extensive debugging on the working servers, the project runs smoothly on a cluster of seven CentOS 7 servers. 
+However, some components are still not performing as expected. Fortunately, the project’s architecture and code style remain solid. 
+I am now focused on rewriting and improving certain parts of the project, with a goal of enhancing its load-balancing intelligence.
+
+## Todo
+[] cluster classification(allow needs of different compiler toolkit chain for different compiling tasks )
+[] libncurses for `./monitor`(just for better stdout)
+[] new tier classification(now tiers are specified without taking the load of compiler-server into account)
+[] ...
